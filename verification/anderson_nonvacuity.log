@@ -1,0 +1,2 @@
+'AndersonNonVacuity.hypotheses_satisfiable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AndersonNonVacuity.conclusion_witnessed' depends on axioms: [propext, Classical.choice, Quot.sound]

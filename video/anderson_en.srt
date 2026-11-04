@@ -1,0 +1,259 @@
+1
+00:00:00,000 --> 00:00:03,150
+Shout down an empty hallway, and the sound travels.
+
+2
+00:00:03,150 --> 00:00:05,559
+Now fill the hallway with random junk.
+
+3
+00:00:05,559 --> 00:00:10,994
+You would expect the sound to get through slowly, like someone pushing through a crowd.
+
+4
+00:00:10,994 --> 00:00:15,318
+In 1958, the physicist Philip Anderson found something much stranger.
+
+5
+00:00:15,318 --> 00:00:19,456
+Randomness alone can stop a wave completely, with no walls at all.
+
+6
+00:00:19,456 --> 00:00:25,200
+Today we ask when that happens, and look at a new proof that nobody has fully confirmed yet.
+
+7
+00:00:25,800 --> 00:00:28,376
+Here is a real simulation on a computer.
+
+8
+00:00:28,376 --> 00:00:32,046
+On top, a wave moves along a clean line and spreads far.
+
+9
+00:00:32,046 --> 00:00:34,815
+Below, the same wave meets random heights.
+
+10
+00:00:34,815 --> 00:00:37,455
+It bounces, and it meets its own echoes.
+
+11
+00:00:37,455 --> 00:00:40,610
+Those echoes cancel each other, again and again.
+
+12
+00:00:40,610 --> 00:00:45,568
+So the wave stays near where it started, even though nothing blocks the way.
+
+13
+00:00:45,568 --> 00:00:50,140
+In our run, the clean wave reached a width of about eighty-five sites.
+
+14
+00:00:50,140 --> 00:00:52,200
+The messy one stayed near five.
+
+15
+00:00:52,800 --> 00:00:55,298
+Now, the shape of the world matters.
+
+16
+00:00:55,298 --> 00:00:57,658
+A hallway gives a wave one route.
+
+17
+00:00:57,658 --> 00:00:59,254
+A floor gives it many.
+
+18
+00:00:59,254 --> 00:01:01,405
+A building gives it even more.
+
+19
+00:01:01,405 --> 00:01:04,944
+With more routes, echoes find it harder to cancel.
+
+20
+00:01:04,944 --> 00:01:07,373
+Physicists predicted this in 1979.
+
+21
+00:01:07,373 --> 00:01:09,871
+In a line, any mess traps the wave.
+
+22
+00:01:09,871 --> 00:01:14,035
+In three dimensions, a little mess should leave waves free.
+
+23
+00:01:14,035 --> 00:01:22,640
+Our small simulation shows that trend, but be careful: these grids are tiny, so it illustrates the idea and proves nothing.
+
+24
+00:01:23,240 --> 00:01:24,727
+Physicists believed it.
+
+25
+00:01:24,727 --> 00:01:26,991
+Mathematicians could not prove it.
+
+26
+00:01:26,991 --> 00:01:32,488
+The trapped side came first: in 1980 for a line, and later for very strong disorder.
+
+27
+00:01:32,488 --> 00:01:36,951
+But the free side, on a real three-dimensional grid, kept resisting.
+
+28
+00:01:36,951 --> 00:01:43,935
+In the year 2000, the mathematician Barry Simon made it problem number one on his list for the new century.
+
+29
+00:01:43,935 --> 00:01:50,920
+Prove that in three dimensions or more, a little disorder leaves a range of energies where waves stay free.
+
+30
+00:01:51,520 --> 00:01:52,286
+Why so hard?
+
+31
+00:01:52,286 --> 00:01:55,862
+Because the grid is infinite and every point is random.
+
+32
+00:01:55,862 --> 00:01:59,758
+Somewhere, there is always a rare region that behaves badly.
+
+33
+00:01:59,758 --> 00:02:02,312
+A proof cannot just handle the average.
+
+34
+00:02:02,312 --> 00:02:06,846
+It has to control every trouble spot at once, at every scale, forever.
+
+35
+00:02:06,846 --> 00:02:13,040
+It is like promising that a city's traffic will always flow, when any street could suddenly jam.
+
+36
+00:02:13,640 --> 00:02:17,541
+In September 2026, OpenAI released a paper claiming a proof.
+
+37
+00:02:17,541 --> 00:02:19,687
+Here is the plan in plain words.
+
+38
+00:02:19,687 --> 00:02:21,183
+Work on a finite grid.
+
+39
+00:02:21,183 --> 00:02:28,335
+Reveal the randomness one binary digit at a time, and keep strict accounts of how the wave quantities change.
+
+40
+00:02:28,335 --> 00:02:34,317
+If a local step goes wrong, undo it and mark that block as pending, to be cleaned up later.
+
+41
+00:02:34,317 --> 00:02:42,120
+In the end, the accounts turn into a statement about the infinite grid: on a certain range of energies, waves are free.
+
+42
+00:02:42,720 --> 00:02:45,747
+It is important to say what this does not claim.
+
+43
+00:02:45,747 --> 00:02:50,035
+It does not find the exact boundary between trapped and free waves.
+
+44
+00:02:50,035 --> 00:02:55,331
+It does not settle ordinary diffusion, which is a separate problem on Simon's list.
+
+45
+00:02:55,331 --> 00:03:01,763
+And in three dimensions, it only shows that a small enough disorder exists, without saying how small.
+
+46
+00:03:01,763 --> 00:03:06,240
+So even if it is right, this is one big step, and not the whole story.
+
+47
+00:03:06,840 --> 00:03:12,559
+A researcher named Yao Xu turned this into Lean, a program that checks logic step by step.
+
+48
+00:03:12,559 --> 00:03:15,355
+So we ran it ourselves, on a clean machine.
+
+49
+00:03:15,355 --> 00:03:20,058
+It built with no errors, and it relies only on the three standard axioms.
+
+50
+00:03:20,058 --> 00:03:21,519
+That is real evidence.
+
+51
+00:03:21,519 --> 00:03:23,617
+But a computer check has limits.
+
+52
+00:03:23,617 --> 00:03:25,523
+It does not explain the idea.
+
+53
+00:03:25,523 --> 00:03:31,560
+And people still have to confirm that the code asks the same question as the original problem.
+
+54
+00:03:32,160 --> 00:03:33,750
+So where do things stand?
+
+55
+00:03:33,750 --> 00:03:38,329
+MathDB still lists the problem as open, and calls the claim unverified.
+
+56
+00:03:38,329 --> 00:03:41,636
+We know of no independent review by mathematicians.
+
+57
+00:03:41,636 --> 00:03:45,960
+We read the introduction and the plan of the paper, not every page.
+
+58
+00:03:45,960 --> 00:03:52,320
+So please treat this as a striking claim backed by a machine check, and not yet as settled science.
+
+59
+00:03:52,920 --> 00:03:54,802
+Here is the idea in one breath.
+
+60
+00:03:54,802 --> 00:03:59,660
+A wave in a messy world can be trapped by its own echoes, with no walls at all.
+
+61
+00:03:59,660 --> 00:04:01,603
+In a line, that always happens.
+
+62
+00:04:01,603 --> 00:04:09,437
+In three dimensions, a little mess should leave waves free, and now there is a claimed proof, waiting for experts to confirm it.
+
+63
+00:04:09,437 --> 00:04:13,323
+All the mathematics belongs to the people named in the sources.
+
+64
+00:04:13,323 --> 00:04:16,177
+This explanation was made with the help of AI.
+
+65
+00:04:16,177 --> 00:04:18,120
+Sources are in the description.
